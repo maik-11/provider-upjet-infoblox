@@ -1,16 +1,15 @@
-# Provider Template
+# provider-upjet-infoblox
 
-`upjet-provider-template` is a [Crossplane](https://crossplane.io/) provider that
+`provider-upjet-infoblox` is a [Crossplane](https://crossplane.io/) provider that
 is built using [Upjet](https://github.com/crossplane/upjet) code
-generation tools and exposes XRM-conformant managed resources for the
-Template API.
+generation tool and provides a set of resources to manage Infoblox objects.
 
 ## Getting Started
 
 Install the provider by using the following command after changing the image tag
-to the [latest release](https://marketplace.upbound.io/providers/upbound/upjet-provider-template):
+to the [latest release](https://marketplace.upbound.io/providers/upbound/provider-upjet-infoblox):
 ```
-up ctp provider install upbound/upjet-provider-template:v0.1.0
+up ctp provider install upbound/provider-upjet-infoblox:v0.1.0
 ```
 
 Alternatively, you can use declarative installation:
@@ -19,9 +18,9 @@ cat <<EOF | kubectl apply -f -
 apiVersion: pkg.crossplane.io/v1
 kind: Provider
 metadata:
-  name: upjet-provider-template
+  name: provider-upjet-infoblox
 spec:
-  package: upbound/upjet-provider-template:v0.1.0
+  package: upbound/provider-upjet-infoblox:v0.1.0
 EOF
 ```
 
